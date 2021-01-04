@@ -10,7 +10,7 @@ arch = case RUBY_PLATFORM
        when /darwin/
          'darwin-x86'
        else
-         'amd64'
+         'i386'
        end
 
 args = $*.map { |x| x.include?(' ') ? "'" + x + "'" : x }
